@@ -5,18 +5,15 @@ using namespace std;
 int main(){
     int arr[] = {1,2,3,4,5};
     int lengthOfArr = sizeof(arr)/sizeof(arr[0]);
-    int reversedArr[lengthOfArr];
-    int index = lengthOfArr-1;
-    int jindex = 0;
-    for (index; index>=0; index--){
-        reversedArr[jindex] = arr[index];
-        jindex++;
+    int s=0, e=lengthOfArr-1;
+    while(s<=e){
+        swap(arr[s], arr[e]);
+        s+=1;
+        e-=1;
     }
 
-    jindex = 0;
-    for (jindex; jindex<lengthOfArr; jindex++){
-        cout << reversedArr[jindex] << " ";
+    for (int index=0; index<lengthOfArr; index++){
+        cout << arr[index] <<endl;
     }
-
     return 0;
 }
