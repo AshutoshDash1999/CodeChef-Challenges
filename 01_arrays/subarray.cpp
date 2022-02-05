@@ -12,7 +12,6 @@ int main(){
                 cout << arr[k] <<",";
                 sum += arr[k];
             }
-
             if (fsum < sum){
                 fsum = sum;
             }
@@ -20,7 +19,23 @@ int main(){
         }
     }
     cout << "Largest Sum is: " << fsum << endl;
-
-
     return 0;
 }
+
+// Output 
+// 1, | Sum is: 1
+// 1,2, | Sum is: 3
+// 1,2,3, | Sum is: 6
+// 1,2,3,4, | Sum is: 10
+// 1,2,3,4,5, | Sum is: 15
+// 2, | Sum is: 2
+// 2,3, | Sum is: 5
+// 2,3,4, | Sum is: 9
+// 2,3,4,5, | Sum is: 14
+// 3, | Sum is: 3
+// 3,4, | Sum is: 7
+// 3,4,5, | Sum is: 12
+// 4, | Sum is: 4
+// 4,5, | Sum is: 9
+// 5, | Sum is: 5
+// Largest Sum is: 15
